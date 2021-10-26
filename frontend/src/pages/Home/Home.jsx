@@ -12,7 +12,7 @@ const Home = () => {
     }
     const history = useHistory();  //hook (redirecting to another page)
     function startRegister(){
-        history.push('/register');
+        history.push('/authenticate');
     }
     return ( 
         <div className={styles.cardWrapper}>
@@ -23,11 +23,11 @@ const Home = () => {
                 gradually to make sure nothing breaks 😜
             </p>
             <div>
-                <Button onClick={startRegister} text="Get your username"/>
+                <Button onClick={startRegister} text="Lets Go"/>
             </div>
             <div className={styles.signinWrapper}>
                 <span className={styles.hasInvite}>Have an invite text?</span>
-                <Link style={signInLinkStyle} to="/login">Sign in</Link>
+                
             </div>
             </Card>
         </div>
